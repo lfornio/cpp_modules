@@ -1,9 +1,9 @@
-NAME		= 	zombie
-SRCS		= 	Zombie.cpp main.cpp ZombieHorde.cpp
+NAME		= 	scavtrap
+SRCS		= 	main.cpp ClapTrap.cpp ScavTrap.cpp
 CC 			= 	c++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror
 RM			=	rm -f
-INCLUDE		=	Zombie.hpp
+INCLUDE		=	ClapTrap.hpp ScavTrap.hpp
 OBJS		=	$(SRCS:.cpp=.o)
 
 .cpp.o:

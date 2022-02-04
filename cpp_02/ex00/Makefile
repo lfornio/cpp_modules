@@ -1,6 +1,6 @@
 NAME		= 	fixed
 SRCS		= 	main.cpp Fixed.cpp
-CC 			= 	g++
+CC 			= 	c++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror
 RM			=	rm -f
 INCLUDE		=	Fixed.hpp

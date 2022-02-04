@@ -5,7 +5,8 @@ int main(void)
     ClapTrap Ben("Ben");
 
     Ben.attack("Bob");
-    Ben.beRepaired(3);
+    Ben.takeDamage(3);
+    Ben.beRepaired(5);
 
     return 0;
 }

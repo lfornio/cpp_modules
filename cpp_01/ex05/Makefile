@@ -1,6 +1,6 @@
 NAME		= 	karen
 SRCS		= 	main.cpp Karen.cpp
-CC 			= 	g++
+CC 			= 	c++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror
 RM			=	rm -f
 INCLUDE		=	Karen.hpp

@@ -1,6 +1,6 @@
 NAME		= 	weapon
 SRCS		= 	main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
-CC 			= 	g++
+CC 			= 	c++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror
 RM			=	rm -f
 INCLUDE		=	Weapon.hpp HumanA.hpp HumanB.cpp

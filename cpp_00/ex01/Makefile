@@ -1,6 +1,6 @@
 NAME		= 	phonebook
 SRCS		= 	phonebook.cpp Contact.cpp main.cpp
-CC 			= 	g++
+CC 			= 	c++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror
 RM			=	rm -f
 INCLUDE		=	phonebook.hpp contact.hpp

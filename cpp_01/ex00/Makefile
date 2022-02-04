@@ -1,6 +1,6 @@
 NAME		= 	zombie
 SRCS		= 	Zombie.cpp main.cpp newZombie.cpp randomChump.cpp
-CC 			= 	g++
+CC 			= 	c++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror
 RM			=	rm -f
 INCLUDE		=	Zombie.hpp

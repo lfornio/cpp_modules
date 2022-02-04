@@ -1,6 +1,6 @@
 NAME		= 	claptrap
 SRCS		= 	main.cpp ClapTrap.cpp
-CC 			= 	g++
+CC 			= 	c++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror
 RM			=	rm -f
 INCLUDE		=	ClapTrap.hpp

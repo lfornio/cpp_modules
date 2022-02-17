@@ -1,9 +1,9 @@
 #ifndef POINT_HPP
 #define POINT_HPP
 #include <iostream>
-#include <string>
-#include <cmath>
 #include "Fixed.hpp"
+// #include <ostream>
+// #include <cmath>
 
 class Point
 {
@@ -19,6 +19,5 @@ public:
     float getX(void) const;
     float getY(void) const;
 };
-
 bool bsp(Point const a, Point const b, Point const c, Point const point);
 #endif

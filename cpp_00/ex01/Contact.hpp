@@ -4,12 +4,20 @@
 #include <iomanip>
 #include <string>
 
+#define GREEN "\033[32m"
+#define GREEN_BOLD "\033[1;32m"
+#define BLUE "\033[34m"
+#define END "\033[0m"
+
 class Contact
 {
 public:
+    Contact();
+    ~Contact();
     void setContact();
     void printContactFull();
     void printContactStr(int index);
+    void freeContact();
     std::string cropContact(std::string s);
 
 private:

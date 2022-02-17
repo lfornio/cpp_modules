@@ -1,4 +1,3 @@
-#include "Fixed.hpp"
 #include "Point.hpp"
 
 int main(void)
@@ -6,8 +5,8 @@ int main(void)
     Point a(2, 1);
     Point b(6, 7);
     Point c(12, 4);
-    Point p(5, 3); //1
-    // Point p(2, 6); //0
+    // Point p(5, 3); // 1
+    Point p(2, 6); // 0
     // Point p(2, 1); //0
     // Point p(5.35, 4.89); //1
     // Point p(0, 0); //0

@@ -1,4 +1,4 @@
-NAME		= 	karen_filtr
+NAME		= 	karenFilter
 SRCS		= 	main.cpp Karen.cpp
 CC 			= 	g++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror

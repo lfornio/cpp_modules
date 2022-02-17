@@ -1,4 +1,4 @@
-NAME		= 	fixed
+NAME		= 	point
 SRCS		= 	main.cpp Fixed.cpp Point.cpp bsp.cpp
 CC 			= 	c++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror

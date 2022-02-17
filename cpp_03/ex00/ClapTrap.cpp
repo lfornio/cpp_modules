@@ -11,7 +11,7 @@ ClapTrap::ClapTrap(void)
 
 ClapTrap::~ClapTrap(void)
 {
-    std::cout << "Destructor called ClapTrap"  << std::endl;
+    std::cout << "Destructor called ClapTrap" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name)

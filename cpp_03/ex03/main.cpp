@@ -6,10 +6,9 @@
 int main(void)
 {
     DiamondTrap one("LIZA");
-    // DiamondTrap two(one);
-    // one.attack("CoCo");
-
-
+    DiamondTrap two(one);
+    one.attack("CoCo");
+    two.whoAmI();
 
     return 0;
 }

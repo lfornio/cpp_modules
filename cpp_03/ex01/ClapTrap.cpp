@@ -90,3 +90,7 @@ void ClapTrap::takeDamage(unsigned int amount)
         exit(EXIT_FAILURE);
     }
 }
+
+
+
+

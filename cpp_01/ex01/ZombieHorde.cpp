@@ -1,9 +1,9 @@
 #include "Zombie.hpp"
-#include <limits>
+#include <climits>
 
 Zombie *zombieHorde(int N, std::string name)
 {
-    if (N < 0 || N > INT32_MAX)
+    if (N < 0 || N > INT_MAX)
     {
         std::cout << "The N is not valid" << std::endl;
         return (NULL);

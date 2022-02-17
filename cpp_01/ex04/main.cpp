@@ -27,9 +27,9 @@ std::string replaceStr(std::string str, std::string s1, std::string s2)
     return (str);
 }
 
-int openFileForRead(std::ifstream &fin, std::string name)
+int openFileForRead(std::ifstream &fin, const std::string name)
 {
-    fin.open(name);
+    fin.open(name.c_str());
     if (!fin.is_open())
     {
         std::cout << "The file is not open" << std::endl;
@@ -38,9 +38,9 @@ int openFileForRead(std::ifstream &fin, std::string name)
     return (0);
 }
 
-int openFileForWrite(std::ofstream &fout, std::ifstream &fin, std::string name)
+int openFileForWrite(std::ofstream &fout, std::ifstream &fin, const std::string name)
 {
-    fout.open(name);
+    fout.open(name.c_str());
     if (!fout.is_open())
     {
         std::cout << "The file " << name << " is not open" << std::endl;

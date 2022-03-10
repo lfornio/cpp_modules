@@ -11,6 +11,7 @@
 class Span
 {
 private:
+<<<<<<< HEAD
 	unsigned int _size;
 	std::vector<int> _vector;
 
@@ -24,6 +25,21 @@ public:
 	unsigned int shortestSpan(void);
 	unsigned int longestSpan(void);
 	void print(void);
+=======
+    unsigned int _size;
+    std::vector<int> _vector;
+
+public:
+    Span(const unsigned int N = 0);
+    ~Span();
+    Span(const Span &other);
+    Span &operator=(const Span &other);
+    void addNumber(const int num);
+    void addNumber(void);
+    unsigned int shortestSpan(void);
+    unsigned int longestSpan(void);
+    void print(void);
+>>>>>>> ba2fdf64f556b46008f8215c40dfd939da44ca57
 };
 
 #endif

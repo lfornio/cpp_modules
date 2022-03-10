@@ -1,7 +1,7 @@
 NAME		= 	account
 SRCS		= 	Account.cpp tests.cpp
 CC 			= 	c++ -std=c++98
-FLAGS		=	-g -Wall -Wextra -Werror
+FLAGS		=	-Wall -Wextra -Werror
 RM			=	rm -f
 INCLUDE		=	Account.hpp
 OBJS		=	$(SRCS:.cpp=.o)

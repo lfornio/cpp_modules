@@ -2,11 +2,11 @@
 
 int main(void)
 {
-    ClapTrap Ben("Ben");
+	ClapTrap Ben("Ben");
 
-    Ben.attack("Bob");
-    Ben.takeDamage(3);
-    Ben.beRepaired(5);
+	Ben.attack("Bob");
+	Ben.takeDamage(3);
+	Ben.beRepaired(5);
 
-    return 0;
+	return 0;
 }

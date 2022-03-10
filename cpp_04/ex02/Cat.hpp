@@ -11,17 +11,17 @@
 class Cat : public Animal
 {
 private:
-    Brain *cat_ptr;
+	Brain *cat_ptr;
 
 public:
-    Cat(void);
-    ~Cat();
-    Cat(const Cat &other);
-    Cat &operator=(const Cat &other);
-    void makeSound(void) const;
-    std::string getCatIdea(int index) const;
-    void setCatIdea(std::string idea, int index);
-    void print(void) const;
+	Cat(void);
+	~Cat(void);
+	Cat(const Cat &other);
+	Cat &operator=(const Cat &other);
+	void makeSound(void) const;
+	std::string getCatIdea(int index) const;
+	void setCatIdea(std::string idea, int index);
+	void print(void) const;
 };
 
 #endif

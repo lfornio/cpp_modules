@@ -17,34 +17,35 @@ class Bureaucrat;
 class Form
 {
 private:
-    const std::string _name;
-    const int _gradeSign;
-    const int _gradeExec;
-    bool _sign;
+	const std::string	_name;
+	const int			_gradeSign;
+	const int			_gradeExec;
+	bool				_sign;
 
 public:
-    Form(std::string name, int gradeSign, int gradeExec);
-    ~Form();
-    Form(const Form &other);
-    Form &operator=(const Form &other);
+	Form(void);
+	Form(std::string name, int gradeSign, int gradeExec);
+	~Form(void);
+	Form(const Form &other);
+	Form &operator=(const Form &other);
 
-    std::string getName(void) const;
-    int getGradeSign(void) const;
-    int getGradeExec(void) const;
-    bool getSign(void) const;
-    void beSigned(const Bureaucrat &bur);
+	std::string getName(void) const;
+	int getGradeSign(void) const;
+	int getGradeExec(void) const;
+	bool getSign(void) const;
+	void beSigned(const Bureaucrat &bur);
 
-    class GradeTooHighException : public std::exception
-    {
-    public:
-        const char *what() const throw();
-    };
+	class GradeTooHighException : public std::exception
+	{
+	public:
+		const char *what() const throw();
+	};
 
-    class GradeTooLowException : public std::exception
-    {
-    public:
-        const char *what() const throw();
-    };
+	class GradeTooLowException : public std::exception
+	{
+	public:
+		const char *what() const throw();
+	};
 };
 
 std::ostream &operator<<(std::ostream &os, const Form &other);

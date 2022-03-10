@@ -1,12 +1,18 @@
 #include "PresidentialPardonForm.hpp"
 
-PresidentialPardonForm::PresidentialPardonForm(std::string target) : Form("PresidentialPardonForm", 25, 5)
+PresidentialPardonForm::PresidentialPardonForm(void) : Form("PresidentialPardonForm", 25, 5)
 {
-    this->target = target;
+    this->target = "No_target";
     std::cout << GREEN << "Default constructor called PresidentialPardonForm" << END << std::endl;
 }
 
-PresidentialPardonForm::~PresidentialPardonForm()
+PresidentialPardonForm::PresidentialPardonForm(std::string target) : Form("PresidentialPardonForm", 25, 5)
+{
+    this->target = target;
+    std::cout << GREEN << "Constructor with parametrs called PresidentialPardonForm" << END << std::endl;
+}
+
+PresidentialPardonForm::~PresidentialPardonForm(void)
 {
     std::cout << RED << "Destructor called PresidentialPardonForm" << END << std::endl;
 }
@@ -19,7 +25,7 @@ PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &oth
 
 PresidentialPardonForm &PresidentialPardonForm::operator=(const PresidentialPardonForm &other)
 {
-    this->Form::operator=(other);
+    this->setSign(other.getSign());
     this->target = other.target;
     std::cout << "Copy assignment operator called PresidentialPardonForm" << std::endl;
     return *this;

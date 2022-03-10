@@ -32,7 +32,7 @@ int openFileForRead(std::ifstream &fin, const std::string name)
     fin.open(name.c_str());
     if (!fin.is_open())
     {
-        std::cout << "The file is not open" << std::endl;
+        std::cout << "The file " << name << " is not open" << std::endl;
         return (-1);
     }
     return (0);

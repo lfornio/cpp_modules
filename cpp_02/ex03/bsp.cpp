@@ -13,5 +13,5 @@ bool bsp(Point const a, Point const b, Point const c, Point const point)
     if ((tmp1 > 0 && tmp2 > 0 && tmp3 > 0) || (tmp1 < 0 && tmp2 < 0 && tmp3 < 0))
         return true;
     else
-        return (false);
+        return false;
 }

@@ -161,7 +161,7 @@ Fixed &Fixed::min(Fixed &one, Fixed &two)
     return one.fixed_point > two.fixed_point ? two : one;
 }
 
-Fixed Fixed::min(const Fixed &one, const Fixed &two)
+const Fixed &Fixed::min(const Fixed &one, const Fixed &two)
 {
     return one.fixed_point > two.fixed_point ? two : one;
 }
@@ -171,7 +171,7 @@ Fixed &Fixed::max(Fixed &one, Fixed &two)
     return one.fixed_point < two.fixed_point ? two : one;
 }
 
-Fixed Fixed::max(const Fixed &one, const Fixed &two)
+const Fixed &Fixed::max(const Fixed &one, const Fixed &two)
 {
     return one.fixed_point < two.fixed_point ? two : one;
 }

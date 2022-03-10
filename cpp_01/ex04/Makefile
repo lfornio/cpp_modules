@@ -1,4 +1,4 @@
-NAME		= 	program
+NAME		= 	replace
 SRCS		= 	main.cpp
 CC 			= 	c++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror

@@ -9,8 +9,9 @@ private:
     std::string target;
 
 public:
+    PresidentialPardonForm(void);
     PresidentialPardonForm(std::string target);
-    ~PresidentialPardonForm();
+    ~PresidentialPardonForm(void);
     PresidentialPardonForm(const PresidentialPardonForm &other);
     PresidentialPardonForm &operator=(const PresidentialPardonForm &other);
 

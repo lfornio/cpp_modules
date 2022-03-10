@@ -5,10 +5,10 @@
 
 int main(void)
 {
-    DiamondTrap one("LIZA");
-    DiamondTrap two(one);
-    one.attack("CoCo");
-    two.whoAmI();
+	DiamondTrap one("LIZA");
+	DiamondTrap two(one);
+	one.attack("CoCo");
+	two.whoAmI();
 
-    return 0;
+	return 0;
 }

@@ -9,7 +9,7 @@ Fixed::Fixed(void)
 Fixed::Fixed(const int value)
 {
     std::cout << "Int constructor called" << std::endl;
-    fixed_point = value << bits;
+    fixed_point = value * (1 << bits);
 }
 
 Fixed::Fixed(const float value)
@@ -50,7 +50,7 @@ void Fixed::setRawBits(int const raw)
 
 int Fixed::toInt(void) const
 {
-    return this->fixed_point >> bits;
+    return this->fixed_point / (1 << bits);
 }
 
 float Fixed::toFloat(void) const

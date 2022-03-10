@@ -1,8 +1,12 @@
 #include "DiamondTrap.hpp"
 
-DiamondTrap::DiamondTrap(void) : ScavTrap(), FragTrap()
+DiamondTrap::DiamondTrap(void)
 {
-	this->name = "Noname";
+	this->name = "Diamond";
+	ClapTrap::name = name + "_clap_name";
+	this->hitPoints = 100;
+	this->energyPoints = 50;
+	this->attackDamage = 30;
 	std::cout << "Default constructor called DiamondTrap" << std::endl;
 }
 
@@ -11,7 +15,7 @@ DiamondTrap::~DiamondTrap(void)
 	std::cout << "Destructor called DiamondTrap" << std::endl;
 }
 
-DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name), ScavTrap(name), FragTrap(name)
+DiamondTrap::DiamondTrap(std::string name)
 {
 	this->name = name;
 	ClapTrap::name = name + "_clap_name";
@@ -22,9 +26,13 @@ DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name), ScavTrap(name), Fra
 	std::cout << "Constructor with parameters called DiamondTrap" << std::endl;
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap &other) : ClapTrap(other), ScavTrap(other), FragTrap(other)
+DiamondTrap::DiamondTrap(const DiamondTrap &other)
 {
 	this->name = other.name;
+	this->ClapTrap::name = other.ClapTrap::name;
+	this->hitPoints = other.hitPoints;
+	this->energyPoints = other.energyPoints;
+	this->attackDamage = other.attackDamage;
 	std::cout << "Copy constructor called DiamondTrap" << std::endl;
 }
 
@@ -49,10 +57,3 @@ void DiamondTrap::attack(const std::string &target)
 	ScavTrap::attack(target);
 }
 
-void DiamondTrap::print(void)
-{
-	std::cout << "ClapTrap: name = " << ClapTrap::name << " hitpoints = " << ClapTrap::hitPoints << " energepoints = " << ClapTrap::energyPoints << " atackdamade = " << ClapTrap::attackDamage << std::endl;
-	std::cout << "ScavTrap: name = " << ScavTrap::name << " hitpoints = " << ScavTrap::hitPoints << " energepoints = " << ScavTrap::energyPoints << " atackdamade = " << ClapTrap::attackDamage << std::endl;
-	std::cout << "FragTrap: name = " << FragTrap::name << " hitpoints = " << FragTrap::hitPoints << " energepoints = " << FragTrap::energyPoints << " atackdamade = " << ClapTrap::attackDamage << std::endl;
-	std::cout << "DiamondTrap: name = " << DiamondTrap::name << " hitpoints = " << DiamondTrap::hitPoints << " energepoints = " << DiamondTrap::energyPoints << " atackdamade = " << ClapTrap::attackDamage << std::endl;
-}

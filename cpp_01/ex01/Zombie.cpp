@@ -3,6 +3,7 @@
 Zombie::Zombie(void)
 {
 }
+
 Zombie::~Zombie(void)
 {
     std::cout << name << " died" << std::endl;

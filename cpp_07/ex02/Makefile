@@ -1,5 +1,5 @@
 NAME		= 	array
-SRCS		= 	main.cpp 
+SRCS		= 	main.cpp
 CC 			= 	c++ -std=c++98
 FLAGS		=	-g -Wall -Wextra -Werror
 RM			=	rm -f

@@ -9,11 +9,11 @@
 class Intern
 {
 public:
-    Intern();
-    ~Intern();
-    // Intern(const Intern &other);
-    // Intern &operator=(const Intern &other);
+	Intern(void);
+	~Intern(void);
+	Intern(const Intern &other);
+	Intern &operator=(const Intern &other);
 
-    Form *makeForm(std::string form, std::string target);
+	Form *makeForm(std::string form, std::string target);
 };
 #endif

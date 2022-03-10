@@ -9,16 +9,18 @@ int main(void)
 {
     Intern someRandomIntern;
     Form *rrf;
-    rrf = someRandomIntern.makeForm("hello", "Bender");
-    // rrf = someRandomIntern.makeForm("ShrubberyCreationForm", "Bender");
-    // // rrf = someRandomIntern.makeForm("RobotomyRequestForm", "Bender");
-    // // rrf = someRandomIntern.makeForm("PresidentialPardonForm", "Bender");
+    // rrf = someRandomIntern.makeForm("hello", "Bender");
+    // if(!rrf)
+    //     return (1);
+    rrf = someRandomIntern.makeForm("ShrubberyCreationForm", "Bender");
+    // rrf = someRandomIntern.makeForm("RobotomyRequestForm", "Bender");
+    // rrf = someRandomIntern.makeForm("PresidentialPardonForm", "Bender");
     // std::cout << *rrf << std::endl;
     // Bureaucrat me("ME", 1);
     // me.signForm(*rrf);
     // std::cout << *rrf << std::endl;
     // me.executeForm(*rrf);
-    delete rrf;
+    // delete rrf;
 
     return 0;
 }

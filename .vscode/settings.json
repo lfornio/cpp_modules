@@ -68,6 +68,7 @@
         "chrono": "cpp",
         "complex": "cpp",
         "ratio": "cpp",
-        "*.tpp": "cpp"
+        "*.tpp": "cpp",
+        "stack": "cpp"
     }
 }
